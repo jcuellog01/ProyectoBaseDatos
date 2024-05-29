@@ -26,6 +26,19 @@
             <?php
             include 'select.php';
             ?>
+
+        <section id="sectionApi">
+           
+           <div id="ubicacion"><h2>¿Donde nos encontramos?</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194202.681245421!2d-5.229843569202213!3d38.57205081806933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fa0a030775e9%3A0x313bde847075d63e!2sRadikal%20Motors%20Garage!5e0!3m2!1ses!2ses!4v1714208603601!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+   
+           
+           <h3>Chistes de Chuck Norris, conectado con APIRest:</h3>
+           <div id="chuckJokes"></div>
+           
+           <input type="button" onclick="chistesAPI();">
+   
+        </section>
+
         </main>
 
 
