@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <title>Radical Motorworks</title>
 </head>
 
@@ -13,13 +13,13 @@
     <div class="container">
 
         <header>
-            <a href="index.html"><img src="img/Radical-Motorworks.png"></a> 
+            <a href="../index.html"><img src="../img/Radical-Motorworks.png"></a> 
          </header>
 
-        <nav>
-            <a href="index.html"><strong>Inicio</strong></a>
-            <a href="categoriasSegunda.html"><strong>Servicios</strong></a>
-            <a href="ContactoSegunda.html"><strong>Contacto</strong></a>
+         <nav>
+            <a href="../index.html"><strong>Inicio</strong></a>
+            <a href="../login.html"><strong>Login</strong></a>
+            <a href="ventas.php"><strong>Ventas</strong></a>
         </nav>
 
         <main>

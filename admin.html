@@ -16,54 +16,45 @@
             <a href="index.html"><img src="img/Radical-Motorworks.png"></a> 
          </header>
 
-         <nav>
+        <nav>
             <a href="index.html"><strong>Inicio</strong></a>
             <a href="login.html"><strong>Login</strong></a>
-            <a href="ventas.php"><strong>Ventas</strong></a>
+            <a href="php/ventas.php"><strong>Ventas</strong></a>
         </nav>
 
         <main>
-            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" class="formulario" onsubmit="return isNumeroTelefono()">
+        <h2>MENU DE ADMINISTRACION: </h2>
+            <form action="admin.php" method="post">
                 <fieldset>
                     <legend>Seleccione una opción:</legend>
                     <div class="grupo">
-                        <input type="radio" id="cita" name="opcion" value="cita" checked>
-                        <label for="cita">Solicitar una cita</label>
+                        <input type="radio" id="insert" name="opcion" value="insert" checked>
+                        <label for="insert">Insertar producto</label>
                     </div>
             
                     <div class="grupo">
-                        <input type="radio" id="Informacion" name="opcion" value="Informacion">
-                        <label for="Informacion">Información</label>
+                        <input type="radio" id="aniadirUsuario" name="opcion" value="aniadirUsuario">
+                        <label for="aniadirUsuario">Añadir usuario </label>
                     </div>
             
                     <div class="grupo">
-                        <input type="radio" id="reclamaciones" name="opcion" value="reclamaciones">
-                        <label for="reclamaciones">Reclamaciones</label>
+                        <input type="radio" id="delete" name="opcion" value="delete">
+                        <label for="delete">Eliminar producto</label>
+                    </div>
+
+                    <div class="grupo">
+                        <input type="radio" id="update" name="opcion" value="update">
+                        <label for="update">Editar producto</label>
                     </div>
             
-                    <div class="grupo">
-                        <input type="radio" id="otro" name="opcion" value="otro">
-                        <label for="otro">Otro</label>
-                    </div>
                 </fieldset>
             
-                <fieldset>
-                    <legend>Información Personal:</legend>
-                    <div class="grupo">
-                        <label for="name">Nombre:</label>
-                        <input type="text" id="name" name="name">
-                    </div>
-            
-                    <div class="grupo">
-                        <label for="telefono">Telefono:</label>
-                        <input type="text" id="telefono" name="telefono">
-                    </div>
-                    
-                </fieldset>
                 <div class="grupo">
                     <input type="submit" value="Enviar" >
                 </div>
             </form>
+
+
 
         </main>
 

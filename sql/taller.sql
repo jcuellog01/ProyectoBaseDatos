@@ -6,6 +6,7 @@ SET @puntos = 5000;
 
 CREATE TABLE usuarios (
     id_usuario INT PRIMARY KEY,
+    contrasenia VARCHAR(25) NOT NULL,
     nombre VARCHAR(25),
     ap1 VARCHAR(25),
     ap2 VARCHAR(25),
@@ -33,11 +34,11 @@ CREATE TABLE ventas (
     FOREIGN KEY (id_producto) REFERENCES productos(id)
 );
 
-INSERT INTO usuarios (id_usuario, nombre, ap1, ap2, telefono, email, puntos, fecha_alta)
+INSERT INTO usuarios (id_usuario, contrasenia, nombre, ap1, ap2, telefono, email, puntos, fecha_alta)
 VALUES
-(1, 'Juan', 'Cuello', 'Gutierrez', '654565456', 'juan@gmail.com', @puntos, NOW()),
-(2, 'Isaac', 'Asensio', '', '612612612', 'isaac@gmail.com', @puntos, NOW()),
-(3, 'Sergio', 'Pablos', '', '654565456', 'sergio@gmail.com', @puntos, NOW());
+(1, '1234','Juan', 'Cuello', 'Gutierrez', '654565456', 'juan@gmail.com', @puntos, NOW()),
+(2, '5678','Isaac', 'Asensio', '', '612612612', 'isaac@gmail.com', @puntos, NOW()),
+(3, '0000','Sergio', 'Pablos', '', '654565456', 'sergio@gmail.com', @puntos, NOW());
 
 INSERT INTO productos (nombre, descripcion, precio, stock)
 VALUES
