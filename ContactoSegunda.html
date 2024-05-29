@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Radical Motorworks</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <a href="indexSegunda.html"><img src="img/Radical-Motorworks.png"></a> 
+         </header>
+
+        <nav>
+            <a href="indexSegunda.html"><strong>Inicio</strong></a>
+            <a href="categoriasSegunda.html"><strong>Servicios</strong></a>
+            <a href="ContactoSegunda.html"><strong>Contacto</strong></a>
+        </nav>
+
+        <main>
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" class="formulario" onsubmit="return isNumeroTelefono()">
+                <fieldset>
+                    <legend>Seleccione una opción:</legend>
+                    <div class="grupo">
+                        <input type="radio" id="cita" name="opcion" value="cita" checked>
+                        <label for="cita">Solicitar una cita</label>
+                    </div>
+            
+                    <div class="grupo">
+                        <input type="radio" id="Informacion" name="opcion" value="Informacion">
+                        <label for="Informacion">Información</label>
+                    </div>
+            
+                    <div class="grupo">
+                        <input type="radio" id="reclamaciones" name="opcion" value="reclamaciones">
+                        <label for="reclamaciones">Reclamaciones</label>
+                    </div>
+            
+                    <div class="grupo">
+                        <input type="radio" id="otro" name="opcion" value="otro">
+                        <label for="otro">Otro</label>
+                    </div>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Información Personal:</legend>
+                    <div class="grupo">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+            
+                    <div class="grupo">
+                        <label for="telefono">Telefono:</label>
+                        <input type="text" id="telefono" name="telefono">
+                    </div>
+                    
+                </fieldset>
+                <div class="grupo">
+                    <input type="submit" value="Enviar" >
+                </div>
+            </form>
+
+        </main>
+
+        <footer>
+            <div>
+                <h3>Acerca de:</h3>
+            </div>
+            <div>
+                <h3>Nuestras Redes Sociales:</h3>
+            </div>
+            <div>
+                <h3>Formulario de Contacto:</h3>
+            </div>
+        </footer>
+        <div class="copy">
+            <h5>© Radical Motorworks: All Rights Reserved</h5>
+        </div>
+
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

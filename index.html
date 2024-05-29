@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Radical Motorworks</title>
+    
+    <script defer src="./js/scripts.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+           <a href="index.html"><img src="img/Radical-Motorworks.png"></a> 
+           <div id="textoPersonalizado"></div>
+        </header>
+
+        <nav>
+            <a href="index.html"><strong>Inicio</strong></a>
+            <a href="categoriasSegunda.html"><strong>Servicios</strong></a>
+            <a href="ventas.php"><strong>Ventas</strong></a>
+        </nav>
+
+        <main>
+
+            <div class="containerNombre">
+                <input type="text" id="textInput" placeholder="Enter your text here" onSubmit>
+                <div id="displayArea"></div>
+              </div>
+            <section class="section-1">
+                <img src="img/taycan.png" alt="Porsche Taycan">
+            </section>
+
+            <section class="section-2">
+                <video autoplay loop muted>
+                    <source src="img/video.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+
+                <div>
+
+                <h3>Radical Motorworks es una pyme dedicada al sector automovilístico.</h3>
+                <h3>Disponemos de una baja disponibilidad puesto que nuestras instalaciones son reducidas, y nos centramos
+                    en ofrecer el mejor acabado posible a nuestros clientes, y el trato más personal.
+                </h3>
+                <h3>
+                    Ofrecemos soluciones de todo tipo, adaptándonos a las necesidades del cliente
+                </h3>
+            </div>
+
+            </section>
+
+            <div id="button-div"><button class="button" onclick="pintarImagen();"> <h5>NUESTROS PROYECTOS</h5></button></div>
+                
+            <section class="proyectos">
+
+                
+                <div id="contenedorimg"><img src="img/gris.png"></div>
+               
+            </section>
+
+        </main>
+
+        <section>
+           
+        <div id="ubicacion"><h2>¿Donde nos encontramos?</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194202.681245421!2d-5.229843569202213!3d38.57205081806933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fa0a030775e9%3A0x313bde847075d63e!2sRadikal%20Motors%20Garage!5e0!3m2!1ses!2ses!4v1714208603601!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+        
+        <h3>Chistes de Chuck Norris, conectado con APIRest:</h3>
+        <div id="chuckJokes"></div>
+        
+        <input type="button" onclick="chistesAPI();">
+
+         
+</div>
+
+        <footer>
+            <div>
+                <h3>Acerca de:</h3>
+            </div>
+            <div>
+                <h3>Nuestras Redes Sociales:</h3>
+            </div>
+            <div>
+                <h3>Formulario de Contacto:</h3>
+            </div>
+        </footer>
+        <div class="copy">
+            <h5>© Radical Motorworks: All Rights Reserved</h5>
+        </div>
+    </section>
+    </div>
+
+</body>
+
+</html>
