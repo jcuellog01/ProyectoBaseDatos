@@ -23,38 +23,11 @@
         </nav>
 
         <main>
-            <!-- <div class="grid-container">
-                
-                <div class="cell">2</div>
-                <div class="cell">3</div>
-                <div class="cell">4</div>
-                <div class="cell">5</div>
-                <div class="cell">6</div>
-                <div class="cell">7</div>
-                <div class="cell">8</div>
-                <div class="cell">9</div>
-              </div>  -->
+            <?php
+            include 'select.php';
+            ?>
         </main>
 
-<?php
-include 'conexion.php';
-
-$select_query = "SELECT * FROM productos;";
-$result = mysqli_query($conexion, $select_query);
-
-echo "<div class='grid-container'>";
-
-while ($fila = mysqli_fetch_assoc($result)) {
-
-    echo "<div class='cell'>";
-    echo $fila['nombre'] . "<br>";
-    echo $fila['descripcion'] . "<br>";
-    echo $fila['precio'] . "<br>";
-    echo "</div>";
-}
-
-echo "</div>";
-?>
 
         <footer>
             <div>

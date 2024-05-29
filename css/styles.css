@@ -90,6 +90,7 @@ main {
   gap: 5px; /* Espacio entre celdas */
   justify-content: center; /* Centra las celdas horizontalmente */
   align-items: center; /* Centra las celdas verticalmente */
+  grid-area: main;
 }
 
 .cell {
@@ -120,41 +121,6 @@ footer {
   width: auto;
 }
 
-/* Ajustes para la cuadrícula de productos */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 20px;
-  justify-items: center; /* Centra los elementos horizontalmente */
-}
-
-/* Estilos para cada producto */
-.product {
-  border: 1px solid #ddd;
-  padding: 20px;
-  text-align: center;
-}
-
-.product img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.product h2 {
-  margin-bottom: 10px;
-  font-size: 1.2em; /* Tamaño del nombre del producto */
-}
-
-.product .description {
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.product .price {
-  font-weight: bold;
-  color: #333;
-}
 
 /* Set the layout responsive with media queries */
 @media (max-width: 1024px) {
