@@ -28,15 +28,31 @@
             ?>
 
         <section id="sectionApi">
-           
-           <div id="ubicacion"><h2>¿Donde nos encontramos?</h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194202.681245421!2d-5.229843569202213!3d38.57205081806933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fa0a030775e9%3A0x313bde847075d63e!2sRadikal%20Motors%20Garage!5e0!3m2!1ses!2ses!4v1714208603601!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-   
-           
-           <h3>Chistes de Chuck Norris, conectado con APIRest:</h3>
-           <div id="chuckJokes"></div>
-           
-           <input type="button" onclick="chistesAPI();">
-   
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sed sit, maiores esse fuga doloribus autem ullam cum beatae aliquid facere error odio veniam ipsam nam 
+           <p>ipsum illum nemo saepe possimus voluptate quam aspernatur incidunt? Libero, culpa. Animi itaque, eaque ducimus, recusandae iusto veniam aliquid ut perspiciatis odio 
+           <p>perferendis provident quasi quidem vero repellat a cumque voluptas adipisci sit laboriosam ipsum magnam magni? Non nulla ducimus corrupti dolorum architecto, praesentium 
+           <p>cupiditate suscipit modi enim deserunt explicabo, aspernatur quaerat, facere voluptate atque qui consectetur quas eos ipsum hic incidunt. Obcaecati id culpa voluptatem 
+           <p>dolor laborum dolorem, nemo doloremque nihil libero. Voluptatum earum quia eligendi officia, et reiciendis assumenda placeat ipsa error minus accusamus enim at quasi in,
+           <p>perferendis asperiores praesentium vero cupiditate corporis non aliquid nisi? Magni assumenda impedit eum perferendis nam! Asperiores doloremque alias nobis nihil, 
+           <p>perferendis at, quidem autem ipsa inventore voluptatibus blanditiis distinctio molestias unde incidunt eligendi a eos vel deleniti? Eum, dolore asperiores accusamus est 
+           <p>eius laboriosam libero. Quos optio beatae iure aliquid eos deserunt ut, pariatur distinctio minima aut perferendis necessitatibus est incidunt ipsum quia dicta asperiores, 
+           <p>magnam non. Aliquam quas dicta maxime ea, autem vel consequuntur fuga dolores explicabo minus unde similique nobis! In harum corrupti maiores nihil sequi deleniti inventore 
+           <p>nobis impedit accusamus fugit voluptate, similique illo ipsum explicabo, dolor laboriosam dignissimos at cupiditate quaerat! Totam sed at adipisci nulla labore odio pariatur. 
+           <p>Consequuntur aliquid quaerat fuga praesentium iure repellat voluptatibus rerum? Fugiat molestiae accusamus, ullam, architecto suscipit minima vitae, itaque tempora ipsa deleniti 
+           <p>voluptates. Placeat minus ex consequatur et beatae dolores, iure ipsa ea impedit esse architecto odio laudantium, commodi nobis, tenetur quo veritatis provident suscipit harum? 
+           <p>Magni suscipit ullam exercitationem recusandae pariatur molestias neque architecto facere, nulla fugiat nobis similique quae unde atque, nihil quia magnam sunt? Amet ratione 
+           <p>tenetur ut dolor perspiciatis voluptas maiores vel corporis culpa deleniti magnam perferendis eveniet, ducimus debitis accusamus. Omnis officia sit odio quisquam? Voluptatem 
+           <p>nostrum ipsa dicta inventore vitae corporis! Ab incidunt maxime velit quo nesciunt consectetur obcaecati earum dolorum eligendi impedit tenetur, temporibus voluptate, ut facilis 
+            <p>debitis. Adipisci culpa, in quasi ullam sed porro rem eum numquam. Ut similique voluptate optio, qui eaque enim ducimus commodi suscipit delectus doloribus architecto tempore, 
+            <p>voluptatibus, vero incidunt molestias alias? Porro iusto possimus deleniti recusandae accusantium, voluptatibus vitae repellat laboriosam neque voluptas. Minima quidem esse rem 
+            <p>nostrum suscipit ipsa reprehenderit exercitationem ut itaque sapiente, reiciendis asperiores magnam corporis aperiam cum velit eveniet beatae nulla? Architecto dolorem 
+            <p>consequuntur animi eos numquam voluptatum cumque, ipsum sint unde quae deleniti incidunt. Quod hic excepturi optio aut quis ex corporis accusantium nesciunt illum quia officia 
+            <p>temporibus alias libero ipsum assumenda officiis magni quibusdam aperiam molestiae voluptatibus, cupiditate unde. Ipsum ea quaerat facere. Dignissimos nesciunt ipsam qui sunt 
+            <p>libero ut illo quae. Quaerat iure asperiores consectetur? Ducimus, id quidem inventore odit asperiores modi nihil culpa, fuga eius delectus consectetur 
+           <p>veniam a est dolorem assumenda vel incidunt quibusdam debitis vero doloribus, explicabo sapiente. Ipsam magnam iure vel quam, dolor doloremque nulla eius inventore iusto.
+
+
+
         </section>
 
         </main>

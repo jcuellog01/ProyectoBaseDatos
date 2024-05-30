@@ -126,8 +126,8 @@ footer {
 
 #sectionApi{
   background-color: #333;
+  height: 300px;
 }
-
 
 /* Set the layout responsive with media queries */
 @media (max-width: 1024px) {

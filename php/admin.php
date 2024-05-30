@@ -13,18 +13,18 @@
     <div class="container">
 
         <header>
-            <a href="indexSegunda.html"><img src="img/Radical-Motorworks.png"></a> 
+            <a href="index.html"><img src="img/Radical-Motorworks.png"></a> 
          </header>
 
         <nav>
-            <a href="indexSegunda.html"><strong>Inicio</strong></a>
-            <a href="categoriasSegunda.html"><strong>Servicios</strong></a>
-            <a href="ContactoSegunda.html"><strong>Contacto</strong></a>
+            <a href="index.html"><strong>Inicio</strong></a>
+            <a href="login.html"><strong>Login</strong></a>
+            <a href="php/ventas.php"><strong>Ventas</strong></a>
         </nav>
 
         <main>
         <h2>MENU DE ADMINISTRACION: </h2>
-            <form action="login.php" method="post">
+            <form action="admin.php" method="post">
                 <fieldset>
                     <legend>Seleccione una opción:</legend>
                     <div class="grupo">
@@ -54,7 +54,12 @@
                 </div>
             </form>
 
-
+            <?php
+            session_start();
+            
+            echo "<h2>". $_SESSION['user'];
+            
+            ?>
 
         </main>
 

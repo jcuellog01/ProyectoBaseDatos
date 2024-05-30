@@ -2,11 +2,15 @@
 <?php
             
 include 'conexion.php';
+session_start();
 
-$usuario = $_POST['user'];
-$passwd = $_POST['passwd'];
+$_SESSION['user'] = $_POST['user'];
+$user=$_SESSION['user'];
 
-$select_query = "SELECT id_usuario, contrasenia FROM usuarios where id_usuario='$usuario' LIMIT 1;";
+$_SESSION['passwd'] = $_POST['passwd'];
+$passwd=$_SESSION['passwd'];
+
+$select_query = "SELECT id_usuario, contrasenia FROM usuarios where id_usuario='$user' LIMIT 1;";
 $result = mysqli_query($conexion, $select_query);
 
 if (mysqli_num_rows($result) > 0) {
@@ -14,9 +18,10 @@ if (mysqli_num_rows($result) > 0) {
     $contrasenia = $row['contrasenia'];
 
     if ($passwd== $contrasenia) {
-        header('Location: ../admin.html');
+        header('Location: admin.php');
     } else {
         echo "Contraseña incorrecta.";
+        header('Location: ../login.html');
     }
 } else {
     echo "Usuario no encontrado.";
