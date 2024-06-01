@@ -23,9 +23,15 @@
         </nav>
 
         <main>
-            <?php
+        
+        <?php
+            session_start();
+
+            include 'conexion.php';
+            
             include 'select.php';
-            ?>
+
+        ?>
 
         <section id="sectionApi">
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sed sit, maiores esse fuga doloribus autem ullam cum beatae aliquid facere error odio veniam ipsam nam 

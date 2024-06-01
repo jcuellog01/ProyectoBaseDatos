@@ -1,25 +1,27 @@
 <?php
-include 'conexion.php';
+    
+    echo "<h1>" . "INSERCION DE PRODUCTOS: " . "</h1>";
+    include 'conexion.php';
 
-if ($conexion) {
-    $nombre = $_POST['nombre'];
-    $ap1 = $_POST['ap1'];
-    $ap2 = $_POST['ap2'];
-    $comision = $_POST['comision'];
+    if(isset( $_POST['nombre']) && isset($_POST['descripcion']) && isset($_POST['precio']) && isset($_POST['stock'])){
+    
+        $nombre = $_POST['nombre'];
+        $desc = $_POST['descripcion'];
+        $precio = $_POST['precio'];
+        $stock = $_POST['stock'];
+    
+        $insert_query="INSERT INTO productos (nombre, descripcion, precio, stock)
+        VALUES ('$nombre','$desc','$precio','$stock')";
 
-    $insert_query = "INSERT INTO comercial (nombre, apellido1, apellido2, comisión) VALUES ('$nombre', '$ap1', '$ap2', $comision)";
+        $result=mysqli_query($conexion,$insert_query);
+        
+        echo "producto insertado correctamente";
+        header('Location: ../nuevoProducto.html');
 
-    if (mysqli_query($conexion, $insert_query)) {
-        echo "Valor insertado correctamente.<br>";
-    } else {
-        echo "Error insertando valor " . mysqli_error($conexion) . "<br>";
+    }else{
+        
+        echo "ERROR";
+        header('Location: ../nuevoProducto.html');
+
     }
-
-    echo $nombre . "<br>";
-    echo $ap1 . "<br>";
-    echo $ap2 . "<br>";
-    echo $comision . "<br>";
-} else {
-    echo "Conexion fallida: " . mysqli_connect_error() . "<br>";
-}
 ?>

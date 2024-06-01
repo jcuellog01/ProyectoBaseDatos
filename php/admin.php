@@ -13,17 +13,24 @@
     <div class="container">
 
         <header>
-            <a href="index.html"><img src="img/Radical-Motorworks.png"></a> 
+            <a href="index.html"><img src="../img/Radical-Motorworks.png"></a> 
          </header>
 
         <nav>
-            <a href="index.html"><strong>Inicio</strong></a>
-            <a href="login.html"><strong>Login</strong></a>
-            <a href="php/ventas.php"><strong>Ventas</strong></a>
+            <a href="../index.html"><strong>Inicio</strong></a>
+            <a href="../login.html"><strong>Login</strong></a>
+            <a href="../php/ventas.php"><strong>Ventas</strong></a>
         </nav>
 
         <main>
-        <h2>MENU DE ADMINISTRACION: </h2>
+        <h2>MENU DE ADMINISTRACION
+        
+        <?php
+            session_start();
+            
+            echo "<h3>" . "Usuario actual: " . $_SESSION['user'] ."</h3>";
+            
+            ?>
             <form action="admin.php" method="post">
                 <fieldset>
                     <legend>Seleccione una opción:</legend>
@@ -54,12 +61,26 @@
                 </div>
             </form>
 
-            <?php
-            session_start();
+           <?php
+
+           if (isset($_POST['opcion'])) {
             
-            echo "<h2>". $_SESSION['user'];
-            
-            ?>
+            switch($_POST['opcion']){
+
+                case 'insert':
+                    header('Location: ../nuevoProducto.html');
+                    break;
+                
+                case 'aniadirUsuario':
+                    break;
+                case 'delete':
+                    break;
+                case 'update':
+                    break;
+            }
+        
+        }
+           ?>
 
         </main>
 
