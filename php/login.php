@@ -18,13 +18,14 @@ if (mysqli_num_rows($result) > 0) {
     $contrasenia = $row['contrasenia'];
 
     if ($passwd== $contrasenia) {
-        header('Location: admin.php');
+        header('Location: operaciones.php');
     } else {
         echo "Contraseña incorrecta.";
         header('Location: ../login.html');
     }
 } else {
     echo "Usuario no encontrado.";
+    header('Location: ../login.html');
 }
 
 mysqli_close($conexion);
