@@ -3,7 +3,7 @@ session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['update'])) {
-        // Update quantity
+        
         $product_id = $_POST['update'];
         $quantity = $_POST['cantidad'][$product_id];
 
@@ -19,10 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         unset($_SESSION['cart'][$product_id]);
 
     } elseif (isset($_POST['checkout'])) {
-        // Handle checkout
-        // Implement checkout logic here
-        // For example, save the order to the database, send confirmation email, etc.
-        // Clear the cart after successful checkout
+        
         $_SESSION['cart'] = [];
         header('Location: confirmacion.php');
         exit();

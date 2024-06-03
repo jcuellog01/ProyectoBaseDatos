@@ -17,7 +17,7 @@
          </header>
 
          <nav>
-            <a href="../index.html"><strong>Inicio</strong></a>
+            <a href="../cerrarSesion.html"><strong>Cerrar Sesion</strong></a>
             <a href="../login.html"><strong>Login</strong></a>
             <a href="ventas.php"><strong>Ventas</strong></a>
         </nav>

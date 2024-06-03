@@ -69,44 +69,25 @@
     if (isset($_POST['opcion'])) {
         switch ($_POST['opcion']) {
             case 'insert':
-                if (estaContenido($_SESSION['user'], $_SESSION['admin'])) {
-                    header('Location: ../nuevoProducto.html');
-                } else {
-                    header('Location: operaciones.php');
-                }
+                header('Location: ../nuevoProducto.html');
                 break;
             
             case 'nuevoUsuario':
-                if (estaContenido($_SESSION['user'], $_SESSION['admin'])) {
-                    header('Location: ../nuevoUsuario.html');
-                } else {
-                    header('Location: operaciones.php');
-                }
+                header('Location: ../nuevoUsuario.html');
                 break;
             
             case 'delete':
-                if (estaContenido($_SESSION['user'], $_SESSION['admin'])) {
-                    header('Location: ../eliminarProducto.html');
-                } else {
-                    header('Location: operaciones.php');
-                }
+                
+                header('Location: ../eliminarProducto.html');
                 break;
             
             case 'update':
-
-                if (estaContenido($_SESSION['user'], $_SESSION['admin'])) {
-                    header('Location: ../editarProducto.html');
-                } else {
-                    header('Location: operaciones.php');
-                }
                 
                 break;
         }
     }
 
-    function estaContenido($user, $admins) {
-        return in_array($user, $admins);
-    }
+    
 ?>
 
         </main>

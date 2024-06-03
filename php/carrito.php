@@ -2,13 +2,11 @@
 session_start();
 include 'conexion.php';
 
-// Check if the cart is empty
 if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
     echo "<p>El carrito está vacío.</p>";
     exit();
 }
 
-// Fetch product details from the database
 $product_ids = array_keys($_SESSION['cart']);
 $product_ids_placeholder = implode(',', array_fill(0, count($product_ids), '?'));
 
@@ -22,6 +20,7 @@ $products = [];
 while ($row = $result->fetch_assoc()) {
     $products[$row['id']] = $row;
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -51,20 +50,25 @@ while ($row = $result->fetch_assoc()) {
             <tbody>
                 <?php
                 $total = 0;
+                $_SESSION['carrito'] = [];
+                $_SESSION['cantidades'] = [];
+                $_SESSION['total'] = 0;
                 foreach ($product_ids as $product_id) {
                     $product = $products[$product_id];
                     $quantity = $_SESSION['cart'][$product_id];
-
-                    // Only display if quantity is greater than 0
-                    if ($quantity > 0) {
+                    
+                    // Verificar si hay suficiente stock disponible
+                    if ($quantity > 0 && $product['stock'] >= $quantity) {
                         $total_price = $product['precio'] * $quantity;
                         $total += $total_price;
+                        $_SESSION['carrito'][$product_id] = $quantity;
+                        $_SESSION['total'] += $total_price;
 
                         echo "<tr>";
                         echo "<td>" . htmlspecialchars($product['nombre']) . "</td>";
                         echo "<td>" . htmlspecialchars($product['precio']) . "€</td>";
                         echo "<td>
-                                <input type='number' name='cantidad[{$product_id}]' value='{$quantity}' min='1' max='10'>
+                                <input type='number' name='cantidad[{$product_id}]' value='{$quantity}' min='1' max='{$product['stock']}'>
                               </td>";
                         echo "<td>" . htmlspecialchars($total_price) . "€</td>";
                         echo "<td>
@@ -72,12 +76,17 @@ while ($row = $result->fetch_assoc()) {
                                 <button type='submit' name='remove' value='{$product_id}'>Eliminar</button>
                               </td>";
                         echo "</tr>";
+                    } else {
+                        echo "<tr>";
+                        echo "<td colspan='5'>No hay suficiente stock disponible para '{$product['nombre']}'.</td>";
+                        echo "</tr>";
                     }
                 }
                 ?>
             </tbody>
         </table>
-        <p>Total a pagar: <?php echo htmlspecialchars($total); ?>€</p>
+        <p>Total a pagar: <?php echo $total . "€"; ?></p>
         <button type="submit" name="checkout">Finalizar Compra</button>
     </form>
 </body>
+</html>
