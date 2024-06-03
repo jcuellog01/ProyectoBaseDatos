@@ -20,7 +20,8 @@ CREATE TABLE productos (
     nombre VARCHAR(50),
     descripcion VARCHAR(250),
     precio INT,
-    stock INT
+    stock INT,
+    imagen VARCHAR(255)
 );
 
 CREATE TABLE ventas (
@@ -46,20 +47,20 @@ VALUES
 (2, '5678','Isaac', 'Asensio', '', '612612612', 'isaac@gmail.com', NOW()),
 (3, '0000','Sergio', 'Pablos', '', '654565456', 'ergio@gmail.com', NOW());
 
-INSERT INTO productos (nombre, descripcion, precio, stock)
+INSERT INTO productos (nombre, descripcion, precio, stock,imagen)
 VALUES
-('Pegatinas', 'Set de pegatinas de la empresa.', 2, 4000),
-('Llavero', 'Llavero con el logo de Radikal Motorworks.', 3, 6000),
-('Tow', 'Correa de sujeción utilizable en caso de necesitar remolcamiento.', 10, 1000),
-('Poster', 'Póster del logo de la empresa.', 5, 2500),
-('Vinilo liquido', 'Bote de 250ml de vinilo líquido negro para pintar partes del coche.', 12, 1500),
-('Libreta', 'Libreta con el logo de la empresa, y 200 hojas en blanco.', 3, 500),
-('Asesoramiento', 'Asesoramiento para poder convertir tu coche en una máquina de competición.', 40, 100),
-('Aceite', 'Cambio de aceite y filtros.', 55, 100),
-('Aire', 'Cambio de filtro del aire.', 35, 100),
-('Aire ac', 'Carga del aire acondicionado.', 69, 100),
-('Repro', 'Reprogramación de centralita y caja de cambios (si procede).', 300, 100),
-('Downpipe', 'Mejora del sistema de expulsión de gases del motor.', 250, 4000);
+('Pegatinas', 'Set de pegatinas de la empresa.', 2, 4000,'../img/tow.jpg'),
+('Llavero', 'Llavero con el logo de Radikal Motorworks.', 3, 6000,'../img/tow.jpg'),
+('Tow', 'Correa de sujeción utilizable en caso de necesitar remolcamiento.', 10, 1000,'../img/tow.jpg'),
+('Poster', 'Póster del logo de la empresa.', 5, 2500,'../img/tow.jpg'),
+('Vinilo liquido', 'Bote de 250ml de vinilo líquido negro para pintar partes del coche.', 12, 1500,'../img/tow.jpg'),
+('Libreta', 'Libreta con el logo de la empresa, y 200 hojas en blanco.', 3, 500,'../img/tow.jpg'),
+('Asesoramiento', 'Asesoramiento para poder convertir tu coche en una máquina de competición.', 40, 100,'../img/tow.jpg'),
+('Aceite', 'Cambio de aceite y filtros.', 55, 100,'../img/tow.jpg'),
+('Aire', 'Cambio de filtro del aire.', 35, 100,'../img/tow.jpg'),
+('Aire ac', 'Carga del aire acondicionado.', 69, 100,'../img/tow.jpg'),
+('Repro', 'Reprogramación de centralita y caja de cambios (si procede).', 300, 100,'../img/tow.jpg'),
+('Downpipe', 'Mejora del sistema de expulsión de gases del motor.', 250, 4000,'../img/tow.jpg');
 
 INSERT INTO ventas(id_usuario,total,fecha_venta) VALUES (1,23,NOW());
 INSERT INTO ventas(id_usuario,total,fecha_venta) VALUES (2,150,NOW());

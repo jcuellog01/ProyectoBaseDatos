@@ -103,6 +103,11 @@ main {
 
 }
 
+.imagenVentas{
+  width: 10rem;
+  height: auto;
+}
+
 footer {
   padding: 1rem;
   grid-area: footer;
