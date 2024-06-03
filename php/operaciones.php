@@ -48,11 +48,6 @@
         </div>
 
         <div class="grupo">
-            <input type="radio" id="delete" name="opcion" value="delete">
-            <label for="delete">Eliminar producto</label>
-        </div>
-
-        <div class="grupo">
             <input type="radio" id="update" name="opcion" value="update">
             <label for="update">Editar producto</label>
         </div>
@@ -64,7 +59,7 @@
 </form>
 
 <?php
-    $_SESSION['admin'] = [1, 2, 3];
+    
 
     if (isset($_POST['opcion'])) {
         switch ($_POST['opcion']) {
@@ -76,13 +71,8 @@
                 header('Location: ../nuevoUsuario.html');
                 break;
             
-            case 'delete':
-                
-                header('Location: ../eliminarProducto.html');
-                break;
-            
             case 'update':
-                
+                header('Location: ../editarProducto.html');
                 break;
         }
     }
