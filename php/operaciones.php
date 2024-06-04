@@ -43,6 +43,11 @@
         </div>
 
         <div class="grupo">
+            <input type="radio" id="eliminar" name="opcion" value="eliminar" checked>
+            <label for="eliminar">Eliminar producto</label>
+        </div>
+
+        <div class="grupo">
             <input type="radio" id="nuevoUsuario" name="opcion" value="nuevoUsuario">
             <label for="nuevoUsuario">Añadir usuario</label>
         </div>
@@ -65,6 +70,10 @@
         switch ($_POST['opcion']) {
             case 'insert':
                 header('Location: ../nuevoProducto.html');
+                break;
+
+            case 'eliminar':
+                header('Location: ../eliminarProducto.html');
                 break;
             
             case 'nuevoUsuario':
